@@ -20,7 +20,7 @@ for i = 1:rows
         h = fid(i,4*j+2);
         img  = crop_image(I,upLeft_x,upLeft_y,w,h);
         desImg = imresize(img,[256,256],'bilinear');
-        savePath = sprintf('%s%s%05d%s','E:\я╦ювобть\VIVA_traffic_light_detection\zgreen\',prefix,count,'.jpg');
+        savePath = sprintf('%s%s%05d%s','E:\я╦ювобть\VIVA_traffic_light_detection\green_croped\',prefix,count,'.jpg');
         imwrite(desImg,savePath);
         count = count + 1;
     end
